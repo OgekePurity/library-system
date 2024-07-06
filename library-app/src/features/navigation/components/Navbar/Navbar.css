@@ -1,0 +1,92 @@
+:root {
+    --font-size-base: 1rem; /* Base font size */
+    --font-size-small: calc(var(--font-size-base) * 0.8);
+    --font-size-medium: calc(var(--font-size-base) * 1.25);
+    --font-size-large: calc(var(--font-size-base) * 1.5625); /* 1.25 * 1.25 */
+    --font-size-xlarge: calc(var(--font-size-base) * 1.9531); /* 1.25 * 1.5625 */
+  }
+  
+  .navbar {
+    width: 100%;
+    height: 100px;
+    background-color: var(--secondary);
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 64px;
+    padding-right: 44px;
+  }
+  
+  .navbar-logo-section {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-decoration: none;
+    color: var(--text);
+  }
+  
+  .navbar-logo-section h1 {
+    font-size: var(--font-size-large); /* Adjust the font size */
+    margin-left: 10px; /* Add some space between the icon and the text */
+  }
+  
+  .navbar-option-section {
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .navbar-option {
+    padding: 12px;
+    color: var(--text);
+    border-radius: 12px;
+    cursor: pointer;
+    margin-right: 16px;
+    font-size: var(--font-size-medium); /* Adjust the font size */
+  }
+  
+  .navbar-option h2 {
+    margin: 0;
+    font-size: var(--font-size-medium); /* Ensure font size is consistent */
+  }
+  
+  .navbar-option:hover {
+    background-color: var(--primary);
+    color: var(--text-secondary);
+  }
+  
+  .navbar-link {
+    text-decoration: none;
+  }
+  
+  .navbar-search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px var(--text) solid;
+    border-radius: 22px;
+    padding: 4px;
+    margin-right: 16px;
+  }
+  
+  .navbar-search-input {
+    height: 2.5rem;
+    background-color: transparent;
+    border: none;
+    padding-left: 16px;
+    font-size: var(--font-size-medium); /* Adjust the font size */
+    font-weight: 400;
+  }
+  
+  ::placeholder {
+    color: var(--text);
+    opacity: 1;
+  }
+  
+  .navbar-search-input:focus {
+    outline: none;
+  }
+  
